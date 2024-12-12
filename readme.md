@@ -1,6 +1,3 @@
-
-
-```markdown
 # Gerador de Control Flow Graphs (CFG)
 
 Este projeto gera Control Flow Graphs (CFGs) para programas C em diferentes níveis de otimização usando LLVM.
@@ -41,6 +38,7 @@ python3 gen_cfg.py <caminho_do_arquivo.c>
 ```
 
 Exemplo:
+
 ```bash
 python3 gen_cfg.py Test.c
 ```
@@ -67,6 +65,5 @@ Os CFGs gerados serão salvos na pasta `output/` no formato PNG, organizados por
 
 ## Notas Adicionais
 
-- Certifique-se de que todos os arquivos C na pasta `src` estão compilando corretamente antes de executar os scripts.
-- Os níveis de otimização gerados são O0, O1, O2 e O3.
-```
+- Certifique-se de que todos os arquivos C na pasta `src` estão compilando corretamente antes de executar os scripts
+- Os níveis de otimização gerados são O0, O1, O2 e O3
