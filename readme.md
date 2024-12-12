@@ -1,4 +1,4 @@
-Aqui está uma versão melhorada do seu README em Markdown, com instruções mais detalhadas para instalação de dependências e execução do código:
+
 
 ```markdown
 # Gerador de Control Flow Graphs (CFG)
