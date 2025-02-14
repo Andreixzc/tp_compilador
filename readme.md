@@ -1,24 +1,24 @@
-# Gerador de Control Flow Graphs (CFG)
+# Control Flow Graph (CFG) Generator
 
-Este projeto gera Control Flow Graphs (CFGs) para programas C em diferentes níveis de otimização usando LLVM.
+This project generates Control Flow Graphs (CFGs) for C programs at different optimization levels using LLVM.
 
-## Versões Utilizadas
+## Versions Used
 
-- **Sistema Operacional:** Ubuntu 24.04.1 LTS
-- **Clang:** Ubuntu clang version 18.1.3 (1ubuntu1)
-- **LLVM:** Ubuntu LLVM version 18.1.3
-- **Python:** 3.12.3
+- **Operating System:** Ubuntu 24.04.1 LTS  
+- **Clang:** Ubuntu clang version 18.1.3 (1ubuntu1)  
+- **LLVM:** Ubuntu LLVM version 18.1.3  
+- **Python:** 3.12.3  
 
-## Instalação de Dependências
+## Dependency Installation
 
-Para instalar as dependências necessárias, execute os seguintes comandos:
+To install the required dependencies, run the following commands:
 
 ```bash
 sudo apt update
 sudo apt install clang llvm python3 graphviz
 ```
 
-Verifique as instalações com:
+Verify the installations with:
 
 ```bash
 clang --version
@@ -27,43 +27,43 @@ python3 --version
 dot -V
 ```
 
-## Como Executar
+## How to Run
 
-### Para um programa específico:
+### For a specific program:
 
-Use o script `gen_cfg.py`:
+Use the `gen_cfg.py` script:
 
 ```bash
-python3 gen_cfg.py <caminho_do_arquivo.c>
+python3 gen_cfg.py <path_to_file.c>
 ```
 
-Exemplo:
+Example:
 
 ```bash
 python3 gen_cfg.py Test.c
 ```
 
-### Para todos os algoritmos na pasta src:
+### For all algorithms in the `src` folder:
 
-Use o script `gen_cfg_all.py`:
+Use the `gen_cfg_all.py` script:
 
 ```bash
 python3 gen_cfg_all.py src
 ```
 
-Este script processará todos os arquivos .c encontrados na pasta `src` e suas subpastas.
+This script will process all `.c` files found in the `src` folder and its subdirectories.
 
-## Estrutura do Projeto
+## Project Structure
 
-- `gen_cfg.py`: Gera CFG para um programa C específico
-- `gen_cfg_all.py`: Gera CFGs para todos os algoritmos na pasta `src`
-- `src/`: Diretório contendo os arquivos fonte C a serem processados
+- `gen_cfg.py`: Generates a CFG for a specific C program  
+- `gen_cfg_all.py`: Generates CFGs for all algorithms in the `src` folder  
+- `src/`: Directory containing the C source files to be processed  
 
-## Saída
+## Output
 
-Os CFGs gerados serão salvos na pasta `output/` no formato PNG, organizados por arquivo fonte e nível de otimização.
+The generated CFGs will be saved in the `output/` folder in PNG format, organized by source file and optimization level.
 
-## Notas Adicionais
+## Additional Notes
 
-- Certifique-se de que todos os arquivos C na pasta `src` estão compilando corretamente antes de executar os scripts
-- Os níveis de otimização gerados são O0, O1, O2 e O3
+- Ensure that all C files in the `src` folder compile correctly before running the scripts  
+- The generated optimization levels are O0, O1, O2, and O3  
